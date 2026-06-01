@@ -1,6 +1,10 @@
 # Projekt auf GitHub hochladen
 
-Der Code ist **lokal committed** (Branch `main`). Für GitHub fehlt nur noch deine Anmeldung.
+**Account:** [dantin1103-cell](https://github.com/dantin1103-cell)  
+**Repository:** `bonsai-freunde-scharbeutz`  
+**Remote:** `https://github.com/dantin1103-cell/bonsai-freunde-scharbeutz.git`
+
+Der Code ist **lokal committed** (Branch `main`). Remote ist vorkonfiguriert — nur noch anmelden und pushen.
 
 ## Variante A – GitHub CLI (empfohlen)
 
@@ -27,11 +31,11 @@ gh repo create bonsai-freunde-scharbeutz --private --source=. --remote=origin --
 
 ```bash
 cd /Users/dennisweber/Bonsai
-git remote add origin https://github.com/DEIN-USERNAME/bonsai-freunde-scharbeutz.git
+git remote add origin https://github.com/dantin1103-cell/bonsai-freunde-scharbeutz.git
 git push -u origin main
 ```
 
-(`DEIN-USERNAME` durch deinen GitHub-Namen ersetzen.)
+(Remote ist bei dir bereits gesetzt — nur `git push -u origin main` nötig, wenn das Repo auf GitHub existiert.)
 
 ## Was nicht mit hochgeladen wird
 
