@@ -2,48 +2,52 @@
  * Lokale Bilder unter /public/images
  * Hero & Ausstellung: KI-generiert · Rest: Stock (Pexels/Unsplash)
  */
+const base = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
+const img = (path: string) => `${base}${path}`;
+
 export const images = {
-  hero: "/images/hero/main.jpg",
-  heroFallback: "/images/hero/fallback.jpg",
+  hero: img("/images/hero/main.jpg"),
+  heroFallback: img("/images/hero/fallback.jpg"),
 
   about: {
-    garden: "/images/about/garden.jpg",
-    detail: "/images/about/detail.jpg",
-    workshop: "/images/about/workshop.jpg",
+    garden: img("/images/about/garden.jpg"),
+    detail: img("/images/about/detail.jpg"),
+    workshop: img("/images/about/workshop.jpg"),
   },
 
-  treeOfMonth: "/images/gallery/tree-month.jpg",
+  treeOfMonth: img("/images/gallery/tree-month.jpg"),
 
   gallery: {
-    exhibition: "/images/gallery/exhibition-01.jpg",
-    indoor01: "/images/gallery/indoor-01.jpg",
-    indoor02: "/images/gallery/indoor-02.jpg",
-    indoor03: "/images/gallery/indoor-03.jpg",
-    outdoor01: "/images/gallery/outdoor-01.jpg",
-    outdoor02: "/images/gallery/outdoor-02.jpg",
-    outdoor03: "/images/gallery/outdoor-03.jpg",
-    outdoor04: "/images/gallery/outdoor-04.jpg",
-    beginner01: "/images/gallery/beginner-01.jpg",
-    beginner02: "/images/gallery/beginner-02.jpg",
-    treeMonth: "/images/gallery/tree-month.jpg",
+    exhibition: img("/images/gallery/exhibition-01.jpg"),
+    indoor01: img("/images/gallery/indoor-01.jpg"),
+    indoor02: img("/images/gallery/indoor-02.jpg"),
+    indoor03: img("/images/gallery/indoor-03.jpg"),
+    outdoor01: img("/images/gallery/outdoor-01.jpg"),
+    outdoor02: img("/images/gallery/outdoor-02.jpg"),
+    outdoor03: img("/images/gallery/outdoor-03.jpg"),
+    outdoor04: img("/images/gallery/outdoor-04.jpg"),
+    beginner01: img("/images/gallery/beginner-01.jpg"),
+    beginner02: img("/images/gallery/beginner-02.jpg"),
+    treeMonth: img("/images/gallery/tree-month.jpg"),
   },
 
   events: {
-    workshopSpring: "/images/events/workshop-spring.jpg",
-    workshopGenerated: "/images/events/workshop-generated.jpg",
-    clubMeeting: "/images/events/club-meeting.jpg",
-    excursion: "/images/events/excursion.jpg",
+    workshopSpring: img("/images/events/workshop-spring.jpg"),
+    workshopGenerated: img("/images/events/workshop-generated.jpg"),
+    clubMeeting: img("/images/events/club-meeting.jpg"),
+    excursion: img("/images/events/excursion.jpg"),
   },
 
   members: {
-    ficus: "/images/members/ficus.jpg",
-    pine: "/images/members/pine.jpg",
+    ficus: img("/images/members/ficus.jpg"),
+    pine: img("/images/members/pine.jpg"),
   },
 
   team: {
-    petra: "/images/team/petra.jpg",
-    klaus: "/images/team/klaus.jpg",
-    anna: "/images/team/anna.jpg",
-    markus: "/images/team/markus.jpg",
+    petra: img("/images/team/petra.jpg"),
+    klaus: img("/images/team/klaus.jpg"),
+    anna: img("/images/team/anna.jpg"),
+    markus: img("/images/team/markus.jpg"),
   },
 } as const;
